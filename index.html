@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Description List -->
+    <dl>
+         <!-- Description Terms -->
+        <dt>WHO</dt>
+        <!-- Description Details  -->
+        <dd>World health Organization</dd>
+    </dl>
+    <!--
+        hello
+        World
+     -->
+    <!-- Order List -->
+    <ol style="list-style-type: lower-latin;">
+        <li>Shakib</li>
+        <li>Mushfique</li>
+        <li>Tamim</li>
+    </ol>
 
+    <!-- Un order list  -->
 
-    <div style="padding: 20px">
-      <h1
-        id="title"
-        style="color: red; margin: 20px 0px; text-align: center"
-      ></h1>
-      <div style="text-align: center">
-        <span id="date"></span> <b><span id="author"></span></b> <br />
-      </div>
-      <img src="" alt="" id="img" style="padding: 20px; width: 800px" />
-      <p id="des"></p>
-    </div>
+    <ul style="list-style-type:circle">
+        <li>Home</li>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Conatct</li>
+    </ul>
 
-    <script>
-      fetch("https://news.snmleathers.com/api/v1/news/view/26", {
-        method: "get",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-        .then((response) => response.json())
-        .then((res) => {
-          document.getElementById("title").innerHTML = res.data.title;
-          document.getElementById("des").innerHTML = res.data.description;
-          document.getElementById("date").innerHTML =
-            res.data.updateDateBn;
-          document.getElementById("author").innerHTML =
-            res.data.published_by;
-          document.getElementById("img").src = res.data.image;
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-    </script>
-  </body>
+    <video src="./video/New Recording - 20_12_2021, 11_00_55.webm" width="500px" height="auto" controls ></video>
+
+    <iframe src="https://asulsis.com/home" frameborder="0" width="600px" height="600px"></iframe>
+
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0uSdWSZQixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38703894574!2d90.27923866538804!3d23.78057325691257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1640015323546!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <br>
+
+    <audio src="./audio/1m3" controls></audio>
+
+</body>
 </html>
