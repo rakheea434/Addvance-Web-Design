@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      form {
+        margin: 100px;
+      }
+      input,
+      select,
+      label {
+        padding: 10px 20px;
+        display: block;
+        margin: 20px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <label for="username">User Name:</label>
+      <input
+        type="text"
+        name="userName"
+        id="username"
+        placeholder="Type your Name"
+        required
+      />
+      <label for="age">Your Age:</label>
+      <input type="number" name="age" id="age" value="30" readonly />
+      <input type="email" name="email id" id="email" />
+      <input type="password" name="password" id="password" required />
+      <input type="tel" name="mobile" id="mobile" />
+      <input type="file" name="" id="" />
+      <input type="color" name="" id="" />
+      <input type="range" name="" id="" />
+      <input type="search" name="" id="" />
+      <input type="time" name="" id="" />
+      <input type="date" name="" id="" />
+      <label for="division">Division:</label>
+      <select name="division" id="division">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Comilla" selected>Comilla</option>
+        <option value="Comilla">Comilla</option>
+        <option value="Comilla">Comilla</option>
+        <option value="Comilla">Comilla</option>
+        <option value="Comilla">Comilla</option>
+      </select>
+      <label for="check">Are u agree?</label>
+      <input type="checkbox" name="check" id="" checked />
+      <label for="gender">Your Gender</label>
+      <span>male:</span> <input type="radio" name="gender" id="gender" />
+      <span>female</span><input type="radio" name="gender" id="gender" />
+
+      <input type="submit" value="Click" />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>

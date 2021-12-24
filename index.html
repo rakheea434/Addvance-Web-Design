@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Class Two</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
 
-        <h1 class="" id="" style="color:red; background-color:blue; text-align: center;padding: 20px;" title="This is attribute">Class Two</h1>
 
-        <img src="images.jpeg" alt="Dummy Image" class="" id=""   title="This is Image attribute" width="400" height="auto">
+    <div style="padding: 20px">
+      <h1
+        id="title"
+        style="color: red; margin: 20px 0px; text-align: center"
+      ></h1>
+      <div style="text-align: center">
+        <span id="date"></span> <b><span id="author"></span></b> <br />
+      </div>
+      <img src="" alt="" id="img" style="padding: 20px; width: 800px" />
+      <p id="des"></p>
+    </div>
 
-        <br>
-
-        <img src="images/user/anis.jpeg" alt="new image"  width="300">
-
-        <br>
-        <a href="https:google.com">CLICK HERE</a>
-        
-        <a href="about.html" target="_blank" style="color: red; text-decoration: none; margin: 50px; display: inline-block;">Go About Page</a>
-
-        <a href="pages/contact.html">Contact</a>
-
-        <a href="about.html">
-            <img src="./images/user/anis.jpeg" alt="" width="100px">
-        </a>
-
-        
-        <hr style="margin-top:200px;">
-
-    </body>
+    <script>
+      fetch("https://news.snmleathers.com/api/v1/news/view/26", {
+        method: "get",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((res) => {
+          document.getElementById("title").innerHTML = res.data.title;
+          document.getElementById("des").innerHTML = res.data.description;
+          document.getElementById("date").innerHTML =
+            res.data.updateDateBn;
+          document.getElementById("author").innerHTML =
+            res.data.published_by;
+          document.getElementById("img").src = res.data.image;
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    </script>
+  </body>
 </html>
