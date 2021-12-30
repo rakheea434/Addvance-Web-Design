@@ -1,0 +1,36 @@
+ul {
+  background-color: black;
+}
+ul {
+  background-color: aquamarine;
+}
+.testClass, .anotherClass{
+    color: brown;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* .Heading{
+    color: brown;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.copyRightSection{
+        color: brown;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+} */
+
+
+
+
+
+/* #testId{
+    color: brown;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+} */
