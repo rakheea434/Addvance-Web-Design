@@ -1,36 +1,36 @@
-ul {
-  background-color: black;
-}
-ul {
-  background-color: aquamarine;
-}
-.testClass, .anotherClass{
-    color: brown;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-/* .Heading{
-    color: brown;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
+body{
+  background-color: #000;
+  color: #fff;
 }
-.copyRightSection{
-        color: brown;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-} */
 
 
+.test-class .parent> h1, .test-class .parent> p{
+  color: red;
+}
 
-
-
-/* #testId{
-    color: brown;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-} */
+/*
+  Margin Padding
+*/
+.mp{
+  width: 600px;
+  height: 500px;
+  background-color: #ff0;
+  margin: 20px;
+  padding: 30px;
+   border: 50px solid #f00;
+}
+ .mp .child{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(168, 72, 72);
+  margin: 10px;
+  padding: 20px 10px;
+  border: 5px solid #f00;
+ }
