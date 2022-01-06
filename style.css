@@ -1,36 +1,56 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Licorice&family=The+Nautigal&display=swap");
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-body{
-  background-color: #000;
+body {
+  /* background-image: url('./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg');
+  background-position: center;
+  background-repeat:inherit;
+  background-size:contain; */
+  background-color: #fff;
   color: #fff;
+  padding: 20px;
 }
 
-
-.test-class .parent> h1, .test-class .parent> p{
-  color: red;
+.test-class .parent > h1,
+.test-class .parent > p {
+  color: #000;
+  /* border:3px dotted red; */
+  font-size: 16px;
+  /* font-weight: bold; */
+  font-family: "Fira Code", monospace;
+  text-align: justify;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
-/*
-  Margin Padding
-*/
-.mp{
-  width: 600px;
+.first {
+  background-color: rgb(212, 42, 42);
+  width: 500px;
   height: 500px;
-  background-color: #ff0;
-  margin: 20px;
-  padding: 30px;
-   border: 50px solid #f00;
-}
- .mp .child{
-  width: 300px;
-  height: 300px;
-  background-color: rgb(168, 72, 72);
   margin: 10px;
-  padding: 20px 10px;
-  border: 5px solid #f00;
- }
+  /* float: left; */
+}
+
+
+span {
+  background-color: lawngreen;
+  width: 300px; 
+  display: inline-block;
+
+}
+
+.hide{
+  display: none;
+}
+
+
+.first:hover + .hide{
+  display: block;
+}
+
+
