@@ -5,52 +5,72 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
-body {
-  /* background-image: url('./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg');
-  background-position: center;
-  background-repeat:inherit;
-  background-size:contain; */
-  background-color: #fff;
-  color: #fff;
-  padding: 20px;
-}
-
-.test-class .parent > h1,
-.test-class .parent > p {
-  color: #000;
-  /* border:3px dotted red; */
-  font-size: 16px;
-  /* font-weight: bold; */
-  font-family: "Fira Code", monospace;
-  text-align: justify;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.first {
-  background-color: rgb(212, 42, 42);
+/* Static, reletive, absolute, sticky, fixed  */
+.parent{
   width: 500px;
   height: 500px;
+  background-color: #f00;
+  /* position: relative;
+  top: 50px;
+  left: 50px; */  
+  /* position: fixed;
+  right: 0px; */
+  /* position: sticky;
+  top:30px */
+  margin: 200px;
+  position: relative;
+}
+.parent .child{
+  width: 300px;
+  height: 300px;
+  background-color: #ff0;
+  position: absolute;
+  left: 20px;
+}
+.pseudo{
+  margin: 50px;
+}
+.pseudo button{
+    background-color: #000;
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #ffe2df;
+    margin: 10px;
+    transition: ease-in-out 2s;
+}
+.pseudo button:hover{
+  color: #000;
+  background-color: rgb(173, 172, 172);
+  border-radius: 30px;
+  width: 200px;
+
+}
+
+
+.pseudo p::first-letter{
+  color: blue;
+  font-size: 40px;
+}
+
+.pseudo p::first-line{
+  color: #f00;
+}
+
+.pseudo p::before{
+  content: "Hello";
+  color: blue; 
+}
+
+.pseudo p::selection{
+  color: rgb(9, 196, 9);
+  background-color: #ff0;
+}
+
+.pseudo p:not(:last-child){
+  color: rgb(226, 235, 226);
+  background-color: #000;
   margin: 10px;
-  /* float: left; */
 }
-
-
-span {
-  background-color: lawngreen;
-  width: 300px; 
-  display: inline-block;
-
-}
-
-.hide{
-  display: none;
-}
-
-
-.first:hover + .hide{
-  display: block;
-}
-
-
