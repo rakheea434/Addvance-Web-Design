@@ -1,76 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Licorice&family=The+Nautigal&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
-/* Static, reletive, absolute, sticky, fixed  */
-.parent{
-  width: 500px;
-  height: 500px;
-  background-color: #f00;
-  /* position: relative;
-  top: 50px;
-  left: 50px; */  
-  /* position: fixed;
-  right: 0px; */
-  /* position: sticky;
-  top:30px */
-  margin: 200px;
-  position: relative;
-}
-.parent .child{
-  width: 300px;
-  height: 300px;
-  background-color: #ff0;
-  position: absolute;
-  left: 20px;
-}
-.pseudo{
-  margin: 50px;
-}
-.pseudo button{
-    background-color: #000;
-    border: none;
-    padding: 15px 30px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px #ffe2df;
-    margin: 10px;
-    transition: ease-in-out 2s;
-}
-.pseudo button:hover{
-  color: #000;
-  background-color: rgb(173, 172, 172);
-  border-radius: 30px;
-  width: 200px;
 
+.container .item {
+  background-color: rgb(20, 202, 29); 
+  font-size: 30px;
+  color: red;
+  padding: 20px;
 }
 
 
-.pseudo p::first-letter{
-  color: blue;
-  font-size: 40px;
+/* 
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.pseudo p::first-line{
-  color: #f00;
+.one {
+  flex-basis: 150px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
-
-.pseudo p::before{
-  content: "Hello";
-  color: blue; 
+.two {
+  flex-basis: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
-
-.pseudo p::selection{
-  color: rgb(9, 196, 9);
-  background-color: #ff0;
+.seven {
+  flex-basis: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
-
-.pseudo p:not(:last-child){
-  color: rgb(226, 235, 226);
-  background-color: #000;
-  margin: 10px;
-}
+.five {
+  flex-basis: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
+} */
