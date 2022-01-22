@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Responsive Navbar | Logo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+
+    <style>
+      .container {
+        width: 100%; 
+        display: grid;
+        grid-gap: 3px;  
+        grid-template-areas: 
+        "two two two one one one one one one one one one"
+        "two two two thr thr thr thr thr thr thr thr thr"
+        "fou fou fou fou fou fou fou fou fou fou fou fou"
+        ;
+      }
+      .one{
+           grid-area: one;
+      }
+      .two{
+           grid-area: two;
+      }
+      .three{
+          grid-area: thr;
+      }
+      .four{
+           grid-area: fou;
+      }
+      .item { 
+        height: 100px;
+        background-color: rgb(6, 155, 80);
+      }
+    </style>
   </head>
   <body>
-    <nav>
-
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-
-      <label class="logo">Logo</label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-
-
-
-    </nav>
-
-
-    
-    <section></section>
+    <div class="container">
+      <div class="item one">1</div>
+      <div class="item two">2</div>
+      <div class="item three">3</div>
+      <div class="item four">4</div> 
+    </div>
   </body>
 </html>
