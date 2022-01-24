@@ -1,13 +1,29 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: montserrat;
-   background-color: rgb(173, 150, 150);
+  background-color: rgb(236, 23, 23);
+  color: #fff;
 }
- 
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.container .imageContainer, .container .content{ 
+  flex: 1 1 500px;
+  padding: 20px;
+}
+.container .imageContainer img{
+  width: 100%;
+  height: auto;
+}
+
+.container .content .heading{
+  display: none;
+}
 
