@@ -6,24 +6,11 @@
   box-sizing: border-box;
 }
 body {
-  font-family: montserrat;
-  background-color: rgb(236, 23, 23);
-  color: #fff;
+  font-family: montserrat; 
 }
-.container{
-  display: flex;
-  flex-direction: row;
-}
-.container .imageContainer, .container .content{ 
-  flex: 1 1 500px;
-  padding: 20px;
-}
-.container .imageContainer img{
+
+.item img{
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
-
-.container .content .heading{
-  display: none;
-}
-

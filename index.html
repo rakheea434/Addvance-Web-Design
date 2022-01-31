@@ -6,17 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./responsive.css">
-
+    <style>
+      .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 5px;
+        grid-auto-flow: dense;
+      }
+      .full{
+        grid-column: auto/span 2;
+        grid-row:  auto/ span 2;
+      }
+      .portrait{
+        grid-row: auto/ span 2;
+      }
+      .land{
+        grid-column: auto/ span 2;
+      }
+    </style>
   </head>
-  <body> 
+  <body>
     <div class="container">
-      <div class="imageContainer">
-        <img src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg" alt="">
+      <div class="item full">
+        <img src="./images2/dea0f3b7f480b1151c08db4a402a43b9.jpeg" alt="" />
       </div>
-      <div class="content">
-        <h2 class="heading">Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nesciunt quisquam. Aliquid, commodi voluptates dolores cum necessitatibus beatae molestiae numquam optio corrupti quisquam quibusdam esse fugit inventore explicabo voluptatem eveniet laudantium. Vero omnis ab quo aut aliquam perferendis provident dignissimos possimus, ipsa totam dolore eos, veniam, repellendus suscipit similique incidunt quisquam enim. Qui possimus voluptates reiciendis culpa minima ipsa quae dolor nisi minus? Facere ab alias, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi consequatur doloremque repudiandae praesentium dolorem asperiores facere? Enim architecto eligendi odit, temporibus repellat recusandae totam aspernatur quis expedita accusantium unde quo dicta distinctio nesciunt  sit minima excepturi alias iste maiores, commodi eveniet nulla, blanditiis est. A incidunt at vero provident error ipsum accusantium autem molestias deserunt. Voluptas ipsam esse odio eos praesentium, amet reprehenderit omnis, officia magni excepturi fugiat inventore minima quisquam reiciendis iste nemo in mollitia. Vero, natus eligendi fugiat neque, repellat optio accusantium suscipit quibusdam, culpa fuga rerum iste quasi. Ducimus commodi quam harum provident sit eos. Odio consequuntur vel voluptatem ab soluta necessitatibus alias accusamus blanditiis possimus, voluptates eligendi quidem cum odit est ipsa veniam, labore beatae esse. Esse nesciunt ratione nihil error ullam voluptatum hic assumenda animi?</p>
+      <div class="item full">
+        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
+      </div>
+      <div class="item portrait"><img src="./images2/images.jpeg" alt="" /></div>
+      <div class="item">
+        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
+      </div>
+      <div class="item land">
+        <img
+          src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="item full">
+        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
+      </div>
+      <div class="item portrait">
+        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
+      </div>
+      <div class="item land">
+        <img src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg" alt="" />
+      </div>
+       <div class="item full">
+        <img src="./images2/dea0f3b7f480b1151c08db4a402a43b9.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
+      </div>
+      <div class="item portrait"><img src="./images2/images.jpeg" alt="" /></div>
+      <div class="item">
+        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
+      </div>
+      <div class="item land">
+        <img
+          src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="item full">
+        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
+      </div>
+      <div class="item full">
+        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
+      </div>
+      <div class="item portrait">
+        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
+      </div>
+      <div class="item land">
+        <img src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg" alt="" />
       </div>
     </div>
   </body>
