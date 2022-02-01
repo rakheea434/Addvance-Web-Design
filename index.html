@@ -4,96 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid</title>
+    <title>Class</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- http://jsfiddle.net/ttgB8/ -->
     <style>
-      .container{
+      .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 5px;
-        grid-auto-flow: dense;
       }
-      .full{
-        grid-column: auto/span 2;
-        grid-row:  auto/ span 2;
+      .container .item {
+        height: 300px;
+        overflow-y: hidden;
+        position: relative; 
+
       }
-      .portrait{
-        grid-row: auto/ span 2;
+      .container .item img {
+        width: 100%;
+        position: absolute; 
+      transition: all ease 1.1s;
       }
-      .land{
-        grid-column: auto/ span 2;
+      .container .item img:hover { 
+        bottom: 0px; 
+        overflow-y: scroll;
+        
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item full">
-        <img src="./images2/dea0f3b7f480b1151c08db4a402a43b9.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
-      </div>
-      <div class="item portrait"><img src="./images2/images.jpeg" alt="" /></div>
       <div class="item">
-        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
-      </div>
-      <div class="item land">
-        <img
-          src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg"
-          alt=""
-        />
-      </div>
-      <div class="item full">
-        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
-      </div>
-      <div class="item portrait">
         <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
       </div>
-      <div class="item land">
-        <img src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg" alt="" />
-      </div>
-       <div class="item full">
-        <img src="./images2/dea0f3b7f480b1151c08db4a402a43b9.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
-      </div>
-      <div class="item portrait"><img src="./images2/images.jpeg" alt="" /></div>
       <div class="item">
-        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
-      </div>
-      <div class="item land">
-        <img
-          src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg"
-          alt=""
-        />
-      </div>
-      <div class="item full">
-        <img src="./images2/fuji-mountain-in-autumn-doctoregg.jpeg" alt="" />
-      </div>
-      <div class="item full">
-        <img src="./images2/photo-1453728013993-6d66e9c9123a.jpeg" alt="" />
-      </div>
-      <div class="item portrait">
         <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
       </div>
-      <div class="item land">
-        <img src="./images2/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpeg" alt="" />
+      <div class="item">
+        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
+      </div>
+      <div class="item">
+        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
       </div>
     </div>
   </body>
