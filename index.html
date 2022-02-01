@@ -15,36 +15,22 @@
       }
       .container .item {
         height: 300px;
-        overflow-y: hidden;
-        position: relative; 
-
+        transition: all ease 1.1s;
+        background-image: url('./images2/photo-1541963463532-d68292c34b19.jpeg');
+        background-position: top;
+        background-size: cover;
       }
-      .container .item img {
-        width: 100%;
-        position: absolute; 
-      transition: all ease 1.1s;
-      }
-      .container .item img:hover { 
-        bottom: 0px; 
-        overflow-y: scroll;
-        
+      .container .item:hover {
+       background-position:  bottom;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item">
-        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
-      </div>
-      <div class="item">
-        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
-      </div>
-      <div class="item">
-        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
-      </div>
-      <div class="item">
-        <img src="./images2/photo-1541963463532-d68292c34b19.jpeg" alt="" />
-      </div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
     </div>
   </body>
 </html>
