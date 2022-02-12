@@ -1,0 +1,49 @@
+@mixin media($deviceSize) {
+  @media only screen and (min-width: $deviceSize) {
+    @content;
+  }
+}
+@include media(120px) {
+  body {
+    background-color: red;
+  }
+}
+@include media(450px) {
+  body {
+    background-color: yellow;
+  }
+}
+@include media(768px) {
+  body {
+    background-color: blue;
+  }
+}
+@include media(940px) {
+  body {
+    background-color: rgb(56, 179, 56);
+  }
+}
+
+
+@function myFunc2($bgColor2) { 
+  @if (lightness($bgColor2)>50) { 
+    @return  #fff;
+  } @else {
+    @return #000;
+  }
+}
+
+@include media(1200px) {
+  body { 
+    background-color: myFunc2(grey);
+  }
+}
+ 
+#{selector-nest(".warning, alert", "div")}{
+    color:red;
+}
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px);
+
+$font-sizes2: ("small": 19px, "normal2": 18px, "large2": 24px);
+$res: map-merge($font-sizes, $font-sizes2);
+  

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn, .menu-btn {
+  background-color: blue;
+  color: #fff;
+  width: 80px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-btn {
+  border: 2px solid red;
+}
+
+@media only screen and (min-width: 120px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  body {
+    background-color: #38b338;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+.warning div, alert div, .warning div, alert div {
+  color: red;
+}
