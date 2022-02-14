@@ -8,3 +8,26 @@
 // date (toDatestring, toTimeString, toLocalString. getMonth(), getYear())
  
 
+
+// Class 2
+
+/**
+ * conditional statement
+ * Function
+ * array
+ * loop
+ * object (prototype inheritance)
+ * dom manupolation
+ */
+
+/**
+ * var let const
+ * modern javascript
+ * arrow function
+ * array function
+ * map, filter, find
+ * object: Call aply bind
+ * this keyword
+ * prototype inheritance
+ * asyncronyse js
+ */

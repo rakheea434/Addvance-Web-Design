@@ -80,11 +80,11 @@ num1++;
 
 
 var num = 40.999;
-// console.log(Math.PI);
+console.log(Math.max(30, 40, 50, 50, 10));
 
 /**
  * date
  */
 
 var date= new Date();
-console.log(date.getFullYear());
+// console.log(date.getFullYear());
