@@ -50,7 +50,7 @@ console.log(`${name} is here. this is  ${2+3} bangladesh`);
  * object
  */
 var str={
-    'name': 'anis',
+    'name': "anis",
     'age': 28,
     'func': function(){
         console.log('method');
