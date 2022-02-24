@@ -4,37 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Learn with anis</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .demo-class {
+        color: #fff;
+      }
+      #btn, input, label {
+        margin: 50px;
+        color: red;
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px; 
+      }
+      #btn{
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <p id="heading" class="demo">hello world</p>
-      <p id="heading2" class="demo">hello world</p>
+    <div id="testId">
+      <div class="parent">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          hic?
+        </p>
+        <p id="heading" class="demo">hello world</p>
+        <p id="heading2" class="demo">hello world</p>
+      </div>
     </div>
 
-    <script>
-    
+    <div>
+      <form action="#" id="formId">
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" name="userName" />
+        <br />
+        <label for="pass">Password</label>
+        <input type="text" id="pass" name="pass" />
+        <br />
+        <button type="submit" id="btn">Click</button>
+      </form>
+    </div>
 
-      let heading = document.getElementById("heading");
-      let heading2 = document.getElementById("heading2");
-      heading.innerHTML = "<i>This is dom</i>";
-      heading2.innerText = "<b>This is from dom</b>";
-
-      let hd = document.getElementsByTagName("p");
-
-      let cl = document.getElementsByClassName("demo");
-
-      for (let index = 0; index < 2; index++) {
-        cl[0].innerHTML = "Hello bangladesh";
-      }
-
-      let qr = document.querySelectorAll("div > p");
-      console.log(qr);
-      
-      qr[0].innerHTML = "I am from qr";
-
-
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
