@@ -6,27 +6,38 @@
  *  D for Delete
  */ 
  
-let parent= document.querySelector("#testId")
-
-let h1= document.createElement('h1')
-h1.className="demo-class"
-h1.innerHTML="I am anis......"
-parent.appendChild(h1) 
+ const user="admin";
+ const password="12345"
  
-let formId =document.getElementById('formId')
+let btn =document.getElementById('btn')
 let userName =document.getElementById('userName');
-let pass =document.getElementById('pass');
-let passVal=form.elements['userName']; // by index 
-let userVal= userName.value;
-formId.addEventListener('submit', function(event){
-    event.preventDefault()
-    console.log(userVal);
-    console.log(passVal);
-    if(userVal.length==0){
-        alert('User name is null')
+let pass =document.getElementById('pass');  
+let error =document.getElementById('error');  
+
+btn.addEventListener('click', function(event){
+    event.preventDefault() ;
+    error.style.display='block';
+    if(userName.value.length==0){
+        error.innerHTML='User name is Empty';
+    }else if(pass.value.length==0){
+       
+        error.innerHTML='Password is Empty';
     }else{
-        alert(userVal)
+
+        if(userName.value === user && pass.value === password){
+            error.style.color='blue'
+            error.innerHTML='You are loged in';
+        } else if(userName.value !== user){
+             error.innerHTML='User name is wrong'; 
+       } else if(pass.value !== password){
+            error.innerHTML='Password is wrong';   
+       }
+       else{
+            error.innerHTML='Something is wrong';  
+       }
     }
+    
+    
 })
 
 
