@@ -1,12 +1,7 @@
-let body= $('body')
-let btn= $('#btn')
-
-btn.click(function(e){
-    e.preventDefault()
-    var red= Math.round(Math.random()*255);
-    var green= Math.round(Math.random()*255);
-    var blue= Math.round(Math.random()*255);  
-   body.css('background-color', `rgb(${red}, ${green}, ${blue})`)
+var myCarousel = document.querySelector('#carouselExampleFade')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 1000,
+  wrap: true
 })
 
  
