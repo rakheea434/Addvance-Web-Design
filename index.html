@@ -12,234 +12,185 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .row div {
-        height: 800px;
-      }
 
-      .slider-div img {
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
   </head>
   <body>
-    <div>
-      <div class="menu">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="./assets/images2/fuji-mountain-in-autumn-doctoregg.jpeg"
-                width="163px"
-                height="60px"
-                alt=""
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown link new
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown link
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+    <header class="header-section">
+      <div class="menu"></div>
+    </header>
 
-      <div class="slider-div">
-        <div
-          id="carouselExampleFade"
-          class="carousel slide carousel-fade"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./assets/images2/dea0f3b7f480b1151c08db4a402a43b9.jpeg"
-                class="d-block w-100 img-fluid"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images2/fuji-mountain-in-autumn-doctoregg.jpeg"
-                class="d-block w-100 img-fluid"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images2/photo-1541963463532-d68292c34b19.jpeg"
-                class="d-block w-100 img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <section class="slider-section">
+      <div class="slider"></div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-me">
+        <div class="about-piture">
+          <img src="" alt="profile-picture" />
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            magnam expedita ea dolorem dicta, delectus vero incidunt facilis,
+            quidem voluptatum maiores eveniet modi nihil possimus aut omnis
+            aliquam nam iusto?
+          </p>
         </div>
       </div>
-
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 mt-3"
-      >
-        <div class="col bg-primary"></div>
-        <div class="col bg-warning"></div>
-        <div class="col bg-info"></div>
-        <div class="col bg-primary"></div>
-        <div class="col bg-warning"></div>
-        <div class="col bg-info">
-          <div class="row">
-            <div class="col-md-6 bg-danger"></div>
-            <div class="col-md-6"></div>
-          </div>
+    </section>
+    <section class="services-section">
+      <h2>Our Services</h2>
+      <div class="srvices">
+        <div class="services-item">
+          <i class="fas fa-html"> </i>
+          <h1>Web Design</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-item">
+          <i class="fas fa-html"> </i>
+          <h1>Web Development</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-item">
+          <i class="fas fa-html"> </i>
+          <h1>Hosting & Domain</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-item">
+          <i class="fas fa-html"> </i>
+          <h1>IOT service</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-item">
+          <i class="fas fa-html"> </i>
+          <h1>Gamming platform</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-item">
+          <i class="fas fa-html"> </i>
+          <h1>SAAS</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-    </div>
-
-    <div class="mt-5">
-      <form class="row g-3">
-        <div class="col-auto">
-          <label for="staticEmail2" class="visually-hidden">Email</label>
-          <input
-            type="text"
-            readonly
-            class="form-control-plaintext"
-            id="staticEmail2"
-            value="email@example.com"
-          />
+    </section>
+    <section class="portfolio-section">
+      <h2>Our Creative design</h2>
+      <div class="portfolio">
+        <div class="portfolio-item">
+          <img src="" alt="portfolio-item" />
+          <h2>IT website</h2>
         </div>
-        <div class="col-auto">
-          <label for="inputPassword2" class="visually-hidden">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Password"
-          />
+        <div class="portfolio-item">
+          <img src="" alt="portfolio-item" />
+          <h2>Hotel Booking website</h2>
         </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-danger btn-lg mb-3">
-            Confirm identity
-          </button>
+        <div class="portfolio-item">
+          <img src="" alt="portfolio-item" />
+          <h2>Tourism website</h2>
         </div>
-      </form>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 m-5">
-        <div class="card">
-          <img src="./assets/images2/anis.jpeg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <p class="card-title">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
-              obcaecati.
-            </p>
-            <p class="text-primary card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Distinctio, recusandae reprehenderit eos ad impedit incidunt nisi
-              magni praesentium excepturi, totam, repellat reiciendis libero
-              quam. Ducimus fugit maxime sunt voluptatem sequi.
-            </p>
-          </div>
+        <div class="portfolio-item">
+          <img src="" alt="portfolio-item" />
+          <h2>Blog website</h2>
+        </div>
+        <div class="portfolio-item">
+          <img src="" alt="portfolio-item" />
+          <h2>Sports website</h2>
+        </div>
+        <div class="portfolio-item">
+          <img src="" alt="portfolio-item" />
+          <h2>Ecommerce website</h2>
         </div>
       </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
+    </section>
+
+    <section class="blog-section">
+      <h2>Blog Section</h2>
+      <div class="blog">
+        <div class="blog-item">
+          <img src="" alt="blog-post" />
+          <h1>Our Blog Post</h1>
+          <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            veniam quasi fugiat iure sapiente id delectus et cumque? Nam
+            incidunt facilis nulla consectetur cum, perspiciatis laudantium.
+            Laborum mollitia consequatur sequi?
+          </article>
+        </div>
+        <div class="blog-item">
+          <img src="" alt="blog-post" />
+          <h1>Our Blog Post</h1>
+          <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            veniam quasi fugiat iure sapiente id delectus et cumque? Nam
+            incidunt facilis nulla consectetur cum, perspiciatis laudantium.
+            Laborum mollitia consequatur sequi?
+          </article>
+        </div>
+        <div class="blog-item">
+          <img src="" alt="blog-post" />
+          <h1>Our Blog Post</h1>
+          <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            veniam quasi fugiat iure sapiente id delectus et cumque? Nam
+            incidunt facilis nulla consectetur cum, perspiciatis laudantium.
+            Laborum mollitia consequatur sequi?
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-link">
+      <div class="contact">
+        <button>Contact Now</button>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <h2>Menu Item</h2>
+      <div class="footer">
+        <div class="menu">
+          <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="quick-link">
+          <h2>Quick Links</h2>
+          <ul>
+            <li>Privecy Policy</li>
+            <li>Cookie policy</li>
+            <li>Tarms and condition</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="address">
+          <h2>Address</h2>
+          <p>21/c, mirpur</p>
+          <p>Mirpur 2, Dhaka</p>
+          <p>Bangladesh</p>
+        </div>
+        <div class="newsletter">
+          <h2>Subscribe Now</h2>
+          <form action="#">
+            <input type="text" name="email" id="email" />
+            <input type="button" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
