@@ -1,0 +1,10 @@
+@mixin mediaQuery( $minSize , $maxSize){
+@media only screen and (min-width:$minSize) and (max-width:$maxSize){
+    @content; 
+}
+}
+
+// @include mediaQuery(600px){}
+// @include mediaQuery(768px) {}
+// @include mediaQuery(992px) {}
+// @include mediaQuery(1200px) {}

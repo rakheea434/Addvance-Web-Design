@@ -1,11 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto:wght@500&display=swap");
 
+$fontFira: "Fira Code", monospace;
+$fontRobot: "Roboto", sans-serif;
 
-$fontFira: 'Fira Code', monospace;
-$fontRobot: 'Roboto', sans-serif;
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+@import "./assets/partials/responsive";
+.portfolio-section {
+    padding: 30px;
+    background-color: #f0eee1;
+    .portfolio-heading {
+        h2,
+        p {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .portfolio {
+        padding-top: 20px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
+        @include mediaQuery(600px, 768px) {
+            grid-template-columns: repeat(3,150px);
+        }
+        @include mediaQuery(290px, 600px) {
+            grid-template-columns: 450px;
+        }
+        .portfolio-item {
+            div {
+                background-image: url(../images/A-Z.jpg);
+                background-position: top;
+                width: 200px;
+                height: 200px;
+                transition: 19s;
+                &:hover {
+                    background-position: bottom;
+                }
+                @include mediaQuery(600px, 768px) {
+                    width:150px;
+                    height:150px;
+                }
+                @include mediaQuery(290px, 600px) {
+                    width: 450px;
+                    height: 200px;
+                }
+            }
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+
 }
