@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto:wght@500&display=swap");
 
-$fontFira: "Fira Code", monospace;
-$fontRobot: "Roboto", sans-serif;
+ 
+$fontFira: 'Fira Code', monospace;
+$fontRobot: 'Roboto', sans-serif;
 
-* {
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 @import "./assets/partials/responsive";
 .portfolio-section {
     padding: 30px;
@@ -59,4 +60,19 @@ $fontRobot: "Roboto", sans-serif;
         }
     }
 
-}
+} 
+
+.slider-section{
+    .slider{
+        #carouselExampleCaptions{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+            }
+        }
+    }
+} 
