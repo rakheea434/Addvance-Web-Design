@@ -1,0 +1,118 @@
+
+// 
+// contact page css start 
+//  
+
+
+//  banner section start
+
+
+ .banner-section{
+   width: 100%;
+   height: 400px;
+   background-image: linear-gradient( rgba(182, 169, 169, 0.541),rgba(0, 0, 255, 0.486)),  url(../images/Contact-Us.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   .banner{
+     text-align: center;
+     h1{
+       display: inline-block;
+       margin-top: 190px;
+       font-family: $fontRobot;
+       color: rgb(46, 42, 42);
+
+     }
+   }
+  }
+//  
+//banner section end
+//
+
+//
+// address section start
+//
+
+.address-section{
+  padding: 50px 0px;
+  .container{
+    .row{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      .address-item{
+        padding: 20px 0px;
+        background-color: aliceblue;
+        text-align: center;
+        .icon{
+          margin: 50px 0px;
+          i{
+            font-size: 35px;
+            color: #6de092;
+          }
+        }
+        p{
+          a{
+            text-decoration: none;
+            color: rgb(26, 24, 24);
+          }
+        }
+        h3{
+          margin-bottom: 25px;
+          color: rgb(80, 76, 76);
+        }
+
+      }
+    }
+  }
+}
+
+//
+// address section end
+//
+
+
+.contact-me{
+  .container{
+    display: flex;
+    justify-content: space-around;
+    .map{
+      margin-right: 30px;
+    }
+    .contact{
+      .title{
+        text-align: center;
+        h1{
+        font-size: 20px;
+        font-family: $fontRobot;
+        }
+      }
+      form{
+        input{
+          width: 300px;
+          border: none;
+          margin: 10px 0px;
+          padding: 10px;
+          background-color: rgb(211, 206, 206);
+        }
+        textarea{
+          width: 300px;
+          padding: 10px;
+          border: none;
+          background-color: rgb(207, 203, 203);
+        }
+        button{
+          width: 300px;
+          padding: 10px;
+          background-color: #6de092;
+        }
+        
+      }
+    }
+  }
+}
+
+
+
+//
+//contact page css end 
+ //
