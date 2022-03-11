@@ -9,10 +9,46 @@ $fontRobot: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 @import "./assets/partials/responsive";
+
+
+//about section-starting 
+.about-section{
+  padding: 20px 0px;
+  .about-me{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    .about-piture{
+      img{
+        width: 250px; 
+        animation: about-picture 4s ease-in-out infinite;
+        clip-path:polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        @keyframes about-picture {
+          25%{clip-path: circle(50% at 50% 50%);}
+          50%{clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);}
+          75%{clip-path: polygon(50% 0%, 80% 10%, 97% 35%, 97% 69%, 80% 90%, 50% 100%, 20% 90%, 4% 71%, 3% 35%, 20% 10%);}
+          100%{clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
+        }
+      }
+
+    }
+    .about-content{
+      .about-text{
+        height: 202px;
+        overflow-y: auto;
+        box-shadow: 3px 1px 3px #dee2e6;
+        border-top: 1px solid #dee2e6;
+      }
+    }
+  }
+}
+
+//about section-ending
+
+//portfolio section starts here
 .portfolio-section {
   padding: 30px;
   color: black;
-  font-family: $fontFira;
+  font-family: $fontRobot;
   .portfolio-heading {
     h2,
     p {
@@ -26,45 +62,49 @@ $fontRobot: "Roboto", sans-serif;
     padding-top: 20px;
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 360px);
     justify-content: center;
+    @include mediaQuery(992px, 1200px) {
+      grid-template-columns: repeat(3,300px);
+    }
     @include mediaQuery(768px, 992px) {
-      grid-template-columns: repeat(3, 150px);
+      grid-template-columns: repeat(2, 360px);
     }
     @include mediaQuery(600px, 768px) {
-      grid-template-columns: repeat(2, 200px);
-      grid-gap: 100px;
+      grid-template-columns: repeat(1, 500px);
     }
     @include mediaQuery(290px, 600px) {
-      grid-template-columns: 450px;
+      grid-template-columns: auto;
     }
     .portfolio-item {
       div {
-        background-image: url(../images/A-Z.jpg);
+        background-image: url(../images/ac8.jpeg);
         background-position: top;
-        width: 200px;
-        height: 200px;
-        transition: 2.5s;
+        width: 360px;
+        height: 280px;
+        transition: 1s;
         border: 1px solid black;
         &:hover {
           background-position: bottom;
         }
-        @include mediaQuery(768px, 992px) {
-          width: 150px;
-          height: 150px;
+        @include mediaQuery(992px, 1200px) {
+          width: 300px;
+          height: 250px;
         }
-        @include mediaQuery(290px, 600px) {
-          width: 450px;
-          height: 200px;
+        @include mediaQuery(600px, 768px) {
+          width: 500px;
+          height: 280px;
         }
       }
       h2 {
         font-size: 20px;
         text-align: center;
+        margin-top: 10px ;
       }
     }
   }
 }
+//portfolio section-ending
 
 .slider-section {
   .slider {
@@ -80,86 +120,135 @@ $fontRobot: "Roboto", sans-serif;
     }
   }
 }
-/**
-Blog Section
-*/
-#blogsection {
-  font-size: 50px;
-  position: relative;
-  left: 500px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.blog {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  .blog-item {
-    background-color: rgb(201, 199, 199);
+
+//blog section-starting
+
+.blog-section {
+  .blogSection-heading {
+    font-size: 40px;
+    color: #000;
+    padding: 30px;
     text-align: center;
-    height: 400px;
-    margin: 20px;
-    padding: 0px 0px 0px 0px;
-    box-shadow: rgb(146, 146, 146) 3px 3px 3px 3px;
+    /*  left: 500px;
+        margin-top: 50px;
+        margin-bottom: 30px;*/
   }
-}
-
-.b-button01 {
-  background-color: dodgerblue;
-  padding: 3px 15px;
-  font-size: 14px;
-  border-radius: 100px;
-  position: relative;
-  right: 160px;
-  bottom: 170px;
-
-  &:hover {
-    background-color: yellow;
-    color: blueviolet;
-  }
-}
-
-.b-button02 {
-  background-color: dodgerblue;
-  padding: 3px 15px;
-  font-size: 14px;
-  border-radius: 100px;
-  position: relative;
-  right: 160px;
-  bottom: 170px;
-
-  &:hover {
-    background-color: yellow;
-    color: blueviolet;
-  }
-}
-.b-button03 {
-  background-color: dodgerblue;
-  padding: 3px 15px;
-  font-size: 14px;
-  border-radius: 100px;
-  position: relative;
-  right: 160px;
-  bottom: 170px;
-
-  &:hover {
-    background-color: yellow;
-    color: blueviolet;
-  }
-}
-
-@media only screen and (max-width: 700px) {
   .blog {
-    grid-template-columns: auto;
-
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
     .blog-item {
-      box-shadow: rgb(63, 63, 63) 0px 0px 0px 0px;
-      border-radius: 0px;
-      margin: 0px;
+      background-color: rgb(201, 199, 199);
+      text-align: center;
+      height: 400px;
+      margin: 20px;
+      box-shadow: rgb(146, 146, 146) 3px 3px 3px 3px;
+      display: grid;
+      grid-template-rows: repeat(4,auto) ;
+      grid-template-columns:repeat(3,auto);
+      img , h1 , article{
+        grid-column: 1/span 3;
+      }
+      img{
+        width: 100%;
+        height: 190px;
+      }
+      h1{
+        font-size: 30px;
+        color: #0FA5CE;
+      }
+      article{
+        height: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .b-button {
+        background-color: #26b0d6;
+        padding: 3px 15px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        border-radius: 100px;
+        position: relative;
+        grid-column: 2/span 1 ;
+        // right: 160px;
+        // bottom: 170px;
+    
+        &:hover {
+          background-color:#ededf5 ;
+          color: #000 ;
+        }
+      }
+    }
+  }
+
+  
+  @include mediaQuery(600px , 728px) {
+    .blog {
+      grid-template-columns: auto;
+
+      .blog-item {
+        height: 450px;
+        box-shadow: rgb(63, 63, 63) 0px 0px 0px 0px;
+        // border-radius: 0px;
+        margin: 0px;
+        img{
+          height: 250px;
+        }
+        .b-button{
+          padding: 3px 25px;
+        }
+
+      }
+    }
+  }
+  @include mediaQuery(320px, 600px) {
+    .blog {
+      grid-template-columns: auto;
+
+      .blog-item {
+        box-shadow: rgb(63, 63, 63) 0px 0px 0px 0px;
+        // border-radius: 0px;
+        margin: 0px;
+      }
     }
   }
 }
+//blog section-ending
+
+//contact button-starting
+.contact-link{
+  .contact{
+    position: relative;
+    button{
+      width: 180px;
+      height: 50px;border-radius: 10px;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;top: -25px;
+      background-color: #fff;
+
+      a{
+        font-weight: bold;
+        font-family: $fontRobot;
+        font-size: larger;
+        text-decoration: none;
+        padding: 15px 32px;
+        color: #000;
+        &:visited{
+          color: #000;
+        }
+        &:hover{
+          color:#f89d36;
+        }
+      }
+      // &:hover{
+      // background-color: #0FA5CE ;
+      // }
+    }
+  }
+}
+//contact button-ending
 
 /**
 Services section
